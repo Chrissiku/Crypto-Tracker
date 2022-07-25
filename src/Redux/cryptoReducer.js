@@ -11,8 +11,8 @@ export const FetchData = (data) => ({
 
 export const LoadCrypto = () => async (dispatch) => {
   const response = await fetch(BASE_URL);
-  const { data } = await response.json();
-  dispatch(FetchData(data));
+  const { coins } = await response.json();
+  dispatch(FetchData(coins));
 };
 
 const CryptoReducer = (state = initialState, action) => {
