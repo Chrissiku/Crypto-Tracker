@@ -20,6 +20,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+i {
+  cursor: url("./images/cursor-white.png"), auto;
+}
+
 header {
   padding: 20px 40px;
   display: flex;
@@ -125,7 +129,7 @@ header .feature i {
   border: 1px solid rgba(255, 255, 255, 0.322);
 }
 
-.crypto-container .card-container .crypto-card span{
+.crypto-container .card-container .crypto-card span {
   color: rgba(212, 211, 211, 0.918);
 }
 

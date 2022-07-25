@@ -3,8 +3,9 @@
 /* eslint-disable quotes */
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import CryptoPage from "./Components/CryptosPage";
 import Header from "./Components/Header";
+import CryptoPage from "./Components/CryptosPage";
+import SingleCrypto from "./Components/SingleCrypto";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" exact="true" element={<CryptoPage />} />
+        <Route path=":cryptoId" exact="true" element={<SingleCrypto />} />
       </Routes>
     </>
   );
