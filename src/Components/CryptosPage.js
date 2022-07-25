@@ -5,7 +5,7 @@
 /* eslint-disable quotes */
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useSearchParams } from "react-router-dom";
+import { useSearchParams, Link } from "react-router-dom";
 import { LoadCrypto } from "../Redux/cryptoReducer";
 import Crypto from "./Crypto";
 
@@ -25,7 +25,7 @@ const CryptoPage = () => {
         <input
           className="search-bar"
           type="text"
-          value={searchParams.get("filter") || ""}
+          value={searchParams.get("Filter") || ""}
           placeholder="Search Crypto ..."
           onChange={(e) => {
             const Filter = e.target.value;
@@ -45,12 +45,14 @@ const CryptoPage = () => {
               return name.startWith(filter.toLowerCase());
             })
             .map((element) => (
-              <Crypto
-                key={element.id}
-                name={element.name}
-                symbol={element.symbol}
-                icon={element.icon}
-              />
+              <Link key={element.id} to={`/${element.id}`}>
+                <Crypto
+                  key={element.id}
+                  name={element.name}
+                  symbol={element.symbol}
+                  icon={element.icon}
+                />
+              </Link>
             ))}
         </div>
       </div>

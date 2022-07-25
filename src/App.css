@@ -34,7 +34,7 @@ header .logo {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  cursor: pointer;
+  cursor: url("./images/cursor-white.png"), auto;
 }
 
 header .logo span {
@@ -57,7 +57,7 @@ header .feature {
 header .feature i {
   width: 20px;
   color: rgb(241, 238, 10);
-  cursor: pointer;
+  cursor: url("./images/cursor-white.png"), auto;
 }
 
 .crypto-container {
@@ -119,10 +119,14 @@ header .feature i {
   color: yellow;
 }
 
-.crypto-card img {
+.crypto-container .card-container .crypto-card img {
   width: 50px;
   border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.322);
+}
+
+.crypto-container .card-container .crypto-card span{
+  color: rgba(212, 211, 211, 0.918);
 }
 
 @media only screen and (min-width: 768px) {
