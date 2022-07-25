@@ -12,7 +12,7 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path="/" exact="true" element={<CryptoPage />} />
+        <Route path="/*" exact="true" element={<CryptoPage />} />
         <Route path=":cryptoId" exact="true" element={<SingleCrypto />} />
       </Routes>
     </>

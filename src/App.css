@@ -133,6 +133,65 @@ header .feature i {
   color: rgba(212, 211, 211, 0.918);
 }
 
+.single-crypto {
+  padding: 40px 20px;
+  position: relative;
+}
+
+.single-crypto .single-crypto-infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.single-crypto .single-crypto-infos .banner {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 200px;
+  position: relative;
+}
+
+.single-crypto .single-crypto-infos .banner .banner-img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 200px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.1)
+  );
+}
+
+.single-crypto .single-crypto-infos .banner .banner-img img {
+  width: 150px;
+}
+.banner .banner-img .rank {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.single-crypto i {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  color: #fff;
+}
+
+.single-crypto i:hover {
+  color: rgba(255, 0, 0, 0.514);
+}
+
 @media only screen and (min-width: 768px) {
   header .logo span {
     font-size: 30px;

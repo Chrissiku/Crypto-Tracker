@@ -23,20 +23,27 @@ const SingleCrypto = () => {
 
   return (
     <>
-      <div>
+      <div className="single-crypto">
         <Link to="/">
           <i>
-            <Icon icon={arrowCircleLeft} size={64} />
+            <Icon icon={arrowCircleLeft} size={25} />
           </i>
         </Link>
-        <span>
-          <img src={icon} alt={name} />
-        </span>
-        <span>{id}</span>
-        <span>{symbol}</span>
-        <span>{name}</span>
-        <span>{rank}</span>
-        <span>{CurrencyFormatter(price)}</span>
+        <div className="single-crypto-infos">
+          <div className="banner">
+            <div className="banner-img">
+              <img src={icon} alt={name} />
+              <span className="rank">
+                Rank :&nbsp;
+                {rank}
+              </span>
+            </div>
+          </div>
+          <span>{id}</span>
+          <span>{symbol}</span>
+          <span>{name}</span>
+          <span>{CurrencyFormatter(price)}</span>
+        </div>
       </div>
     </>
   );
