@@ -18,31 +18,31 @@ const CryptoPage = () => {
     }
   }, []);
 
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [search, setSearch] = useSearchParams();
   return (
     <>
       <div className="crypto-container">
         <input
           className="search-bar"
           type="text"
-          value={searchParams.get("Filter") || ""}
-          placeholder="Search Crypto ..."
+          value={search.get("filter") || ""}
+          placeholder="Search by Crypto name ..."
           onChange={(e) => {
-            const Filter = e.target.value;
-            if (Filter) {
-              setSearchParams({ Filter });
+            const filter = e.target.value;
+            if (filter) {
+              setSearch({ filter });
             } else {
-              setSearchParams({});
+              setSearch({});
             }
           }}
         />
         <div className="card-container">
           {myState
             .filter((element) => {
-              const filter = searchParams.get("filter");
+              const filter = search.get("filter");
               if (!filter) return true;
               const name = element.name.toLowerCase();
-              return name.startWith(filter.toLowerCase());
+              return name.startsWith(filter.toLowerCase());
             })
             .map((element) => (
               <Link key={element.id} to={`/${element.id}`}>
