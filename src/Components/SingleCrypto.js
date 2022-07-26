@@ -71,7 +71,7 @@ const SingleCrypto = () => {
                 {' '}
                 {symbol}
               </span>
-              <span>
+              <span className="crypto-n">
                 Name :
                 {' '}
                 {name}
