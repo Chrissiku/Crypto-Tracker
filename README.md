@@ -2,7 +2,7 @@
 
 # Project Name :  Crypto-Tracker App
 
->[Crypto-Tracker](https://app-crypto-tracker.netlify.app/) is a web application for a cryptocurrencies that provides some information about the current rank, price, volume, ... of the top 100 most used cryptocurrencies in the worlds.
+>[Crypto-Tracker](https://my-crypto-tracker.netlify.app/) is a web application for a cryptocurrencies that provides some information about the current rank, price, volume, ... of the top 100 most used cryptocurrencies in the worlds.
 >
 >
  ## Project view
@@ -21,7 +21,7 @@
 
 ## Live Demo
 
- - Click [Here](https://app-crypto-tracker.netlify.app/) To open the live demo
+ - Click [Here](https://my-crypto-tracker.netlify.app/) To open the live demo
 
 ## Getting Started
 
