@@ -106,7 +106,7 @@ header .feature i {
   width: 150px;
   height: 150px;
   border-radius: 10px;
-  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.712);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.712);
   cursor: url("./images/cursor-white.png"), auto;
   text-align: center;
   padding: 10px;
@@ -114,6 +114,10 @@ header .feature i {
 
 .crypto-container .card-container .crypto-card:hover {
   background-color: var(--hover-c);
+}
+
+.single-crypto i:hover {
+  color: rgba(255, 0, 0, 0.514);
 }
 
 .crypto-container .card-container .crypto-card i {
@@ -162,14 +166,15 @@ header .feature i {
   left: 0;
   width: 100%;
   height: 200px;
-  background-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.4),
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.2),
-    rgba(0, 0, 0, 0.1)
-  );
+  background-image:
+    linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.1)
+    );
 }
 
 .single-crypto .single-crypto-infos .banner .banner-img img {
@@ -217,7 +222,7 @@ header .feature i {
   text-align: center;
 }
 
-.single-crypto-infos .crypto-info{
+.single-crypto-infos .crypto-info {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -227,7 +232,7 @@ header .feature i {
   width: 100%;
 }
 
-.single-crypto-infos .crypto-info .card-info{
+.single-crypto-infos .crypto-info .card-info {
   min-width: 280px;
   min-height: 300px;
   position: relative;
@@ -238,21 +243,20 @@ header .feature i {
   padding: 10px;
   gap: 15px;
   border-radius: 10px;
-  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.712);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.712);
 }
 
-.single-crypto-infos .crypto-info .card-info .web-icons{
+.single-crypto-infos .crypto-info .card-info .web-icons {
   display: flex;
-  justify-content: none;
   align-items: center;
   gap: 10px;
 }
 
-.single-crypto-infos .crypto-info .card-info .web-icons i{
+.single-crypto-infos .crypto-info .card-info .web-icons i {
   color: #fff;
 }
 
-.single-crypto-infos .crypto-info .card-info .web-icons i:hover{
+.single-crypto-infos .crypto-info .card-info .web-icons i:hover {
   color: yellow;
 }
 
@@ -261,10 +265,6 @@ header .feature i {
   top: 5px;
   left: 10px;
   color: #fff;
-}
-
-.single-crypto i:hover {
-  color: rgba(255, 0, 0, 0.514);
 }
 
 @media only screen and (min-width: 768px) {
