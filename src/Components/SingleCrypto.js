@@ -1,21 +1,14 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable implicit-arrow-linebreak */
-/* eslint-disable object-curly-newline */
-/* eslint-disable react/self-closing-comp */
-/* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable quotes */
-import { useSelector } from "react-redux/es/exports";
-import { useParams, Link } from "react-router-dom";
-import Icon from "react-icons-kit";
-import { arrowCircleLeft } from "react-icons-kit/fa/arrowCircleLeft";
-import { bitcoin } from "react-icons-kit/fa/bitcoin";
-import { twitter } from "react-icons-kit/fa/twitter";
+import { useSelector } from 'react-redux/es/exports';
+import { useParams, Link } from 'react-router-dom';
+import Icon from 'react-icons-kit';
+import { arrowCircleLeft } from 'react-icons-kit/fa/arrowCircleLeft';
+import { bitcoin } from 'react-icons-kit/fa/bitcoin';
+import { twitter } from 'react-icons-kit/fa/twitter';
 
-const CurrencyFormatter = (amount) =>
-  new Intl.NumberFormat("en-US", {
-    style: "currency",
-    currency: "USD",
-  }).format(amount);
+const CurrencyFormatter = (amount) => new Intl.NumberFormat('en-US', {
+  style: 'currency',
+  currency: 'USD',
+}).format(amount);
 
 const SingleCrypto = () => {
   const params = useParams();

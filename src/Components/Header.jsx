@@ -1,12 +1,8 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable react/self-closing-comp */
-/* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable quotes */
-import { Link } from "react-router-dom";
-import Icon from "react-icons-kit";
-import { microphone } from "react-icons-kit/fa/microphone";
-import { gear } from "react-icons-kit/fa/gear";
-import logo from "../images/logo.png";
+import { Link } from 'react-router-dom';
+import Icon from 'react-icons-kit';
+import { microphone } from 'react-icons-kit/fa/microphone';
+import { gear } from 'react-icons-kit/fa/gear';
+import logo from '../images/logo.png';
 
 const Header = () => (
   <>

@@ -1,7 +1,5 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable quotes */
-const BASE_URL = "https://api.coinstats.app/public/v1/coins";
-const FETCH_COINS = "FETCH_COINS";
+const BASE_URL = 'https://api.coinstats.app/public/v1/coins';
+const FETCH_COINS = 'FETCH_COINS';
 const initialState = [];
 
 export const FetchData = (data) => ({

@@ -1,11 +1,6 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable object-curly-newline */
-/* eslint-disable react/self-closing-comp */
-/* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable quotes */
-import PropTypes from "prop-types";
-import Icon from "react-icons-kit";
-import { arrowCircleRight } from "react-icons-kit/fa/arrowCircleRight";
+import PropTypes from 'prop-types';
+import Icon from 'react-icons-kit';
+import { arrowCircleRight } from 'react-icons-kit/fa/arrowCircleRight';
 
 const Crypto = ({ name, symbol, icon }) => (
   <>

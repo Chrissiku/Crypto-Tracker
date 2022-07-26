@@ -1,13 +1,8 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable object-curly-newline */
-/* eslint-disable react/self-closing-comp */
-/* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable quotes */
-import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { useSearchParams, Link } from "react-router-dom";
-import { LoadCrypto } from "../Redux/cryptoReducer";
-import Crypto from "./Crypto";
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { useSearchParams, Link } from 'react-router-dom';
+import { LoadCrypto } from '../Redux/cryptoReducer';
+import Crypto from './Crypto';
 
 const CryptoPage = () => {
   const dispatch = useDispatch();
@@ -25,7 +20,7 @@ const CryptoPage = () => {
         <input
           className="search-bar"
           type="text"
-          value={search.get("filter") || ""}
+          value={search.get('filter') || ''}
           placeholder="Search by Crypto name ..."
           onChange={(e) => {
             const filter = e.target.value;
@@ -39,7 +34,7 @@ const CryptoPage = () => {
         <div className="card-container">
           {myState
             .filter((element) => {
-              const filter = search.get("filter");
+              const filter = search.get('filter');
               if (!filter) return true;
               const name = element.name.toLowerCase();
               return name.startsWith(filter.toLowerCase());
