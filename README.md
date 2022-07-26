@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Project Name :  Crypto-Tracker App
 
-## Available Scripts
+>[Crypto-Tracker](https://space-x-traveler.netlify.app/) is a web application for a cryptocurrencies that provides some information about the current rank, price, volume, ... of the top 100 most used cryptocurrencies in the worlds.
+>
+>
+ ## Project view
+ ### General view 
+![screen1](https://user-images.githubusercontent.com/101924220/181049305-77fc2715-7050-4762-bccc-15337ade0e50.png)
+### Single view
+![screen2](https://user-images.githubusercontent.com/101924220/181049337-1535a4fa-fb94-4370-b028-27e2dd845567.png)
 
-In the project directory, you can run:
+> In order to achieve this project I used some resources and technologies listed below :
+## Built With
 
-### `npm start`
+- Major languages : JavaScript , JSX and CSS
+- Toolchain : `Babel`
+- Library and Framework : `React, React-redux, Jest, React-test-renderer`
+- Technologies used : Github, Git, Gitflow and Linters
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Live Demo
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<!-- - Click [Here](https://space-x-traveler.netlify.app/) To open the live demo -->
+- CLick [Here](https://deploy-preview-39--space-x-traveler.netlify.app/) To open the deploy-preview of latest changes
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To get a local copy up and running follow these simple example steps.
 
-### `npm run build`
+### Prerequisites ♻️
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- A personal computer connected to the internet;
+- Have a working and updated browser.
+- Have a local version control like git installed on your computer
+- Have an account on Github, as an online/remote Version Control System
+- Code editor (Visual studio code, sublime text, notepad++, ...) installed on your computer;
+- To be okay with javaScript ES6
+- Knowledge of HTML and CSS.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Setup 🎰
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Click the [me](https://github.com/Chrissiku/Crypto-Tracker) and you'll land on the pure repository;
+- click on the green (🟢) button with `Code` Inscription;
+- You can choose to download the project or just clone it if you are familiar with Git and Github;
+- Follow normal step once download in your computer and use it as it's yours.
 
-### `npm run eject`
+### Install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- If you are familiar with git, Run `npm install` to get all dependencies required to run the linters checks, otherwise use the downloaded project on your computer without testing files
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Run test 🧪
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+> Run the command bellow inside your `git bash` or command line interface..
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- `npm run start` : to run the project in your default web Browser
+- `npx stylelint "**/*.{css,scss}"` : for the `css` codebase and use of best practices. you can add
+- `npx eslint .` : for the `JavaScript` codebase and use of best practices
+- > Note that you can add `--fix` keyword to the command for `Css` and/or `JavaScript` to make sure that you avoid all errors coming from your `code editor`
 
-## Learn More
+## Author
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+👤 **Chris Siku**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- GitHub: [@githubhandle](https://github.com/Chrissiku)
+- Twitter: [@twitterhandle](https://twitter.com/christian_siku)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/chris-siku-4bb53b232/)
 
-### Code Splitting
+## Contributing 🤝 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Contributions, issues, and feature requests are welcome!
 
-### Analyzing the Bundle Size
+Feel free to check the [issues page](../../issues/).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Show your support
 
-### Making a Progressive Web App
+Give a ⭐️ if you like this project!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Acknowledgments
 
-### Advanced Configuration
+- To [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio) for the coolest design graphics inspiration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📝 License
 
-### Deployment
+This project is [MIT](./MIT.md) licensed.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
